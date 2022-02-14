@@ -1,0 +1,294 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>43/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 20 08:32:15 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>314 seconds (314055 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.AddUserPageTest.verifyDelete()'><b>verifyDelete</b><br>Test class: com.orangehrm.qa.testcases.AddUserPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.orangehrm.qa.testcases.AddUserPageTest@87f383f</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.AdminPageTest.verifyAdminPageAddUser()'><b>verifyAdminPageAddUser</b><br>Test class: com.orangehrm.qa.testcases.AdminPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.orangehrm.qa.testcases.AdminPageTest@6121c9d6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.ConfigurePIMPageTest.verifyConfigurePIMPageElementsTest()'><b>verifyConfigurePIMPageElementsTest</b><br>Test class: com.orangehrm.qa.testcases.ConfigurePIMPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.orangehrm.qa.testcases.ConfigurePIMPageTest@1060b431</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.AddUserPageTest.verifyaddUserActionTest()'><b>verifyaddUserActionTest</b><br>Test class: com.orangehrm.qa.testcases.AddUserPageTest<br>Parameters: Orange Test, Orange user1, Orangehrm_123$, Orangehrm_123$</td>
+<td></td>
+<td>0</td>
+<td>com.orangehrm.qa.testcases.AddUserPageTest@87f383f</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.AdminPageTest.verifyAdminPageAction()'><b>verifyAdminPageAction</b><br>Test class: com.orangehrm.qa.testcases.AdminPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.orangehrm.qa.testcases.AdminPageTest@6121c9d6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.AssignLeavePageTest.setUp()'><b>setUp</b><br>Test class: com.orangehrm.qa.testcases.AssignLeavePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.orangehrm.qa.testcases.AssignLeavePageTest@eafc191</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.CsvDataImportaPageTest.verifySetUp()'><b>verifySetUp</b><br>Test class: com.orangehrm.qa.testcases.CsvDataImportaPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.orangehrm.qa.testcases.CsvDataImportaPageTest@e720b71</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.EditUserPageTest.userPageNavigation()'><b>userPageNavigation</b><br>Test class: com.orangehrm.qa.testcases.EditUserPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.orangehrm.qa.testcases.EditUserPageTest@4eb7f003</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.LeaveEntitlementsPageTest.verifyEnterLeaveMultipleEmployees()'><b>verifyEnterLeaveMultipleEmployees</b><br>Test class: com.orangehrm.qa.testcases.LeaveEntitlementsPageTest<br>Parameters: Orange Test, 30.18</td>
+<td></td>
+<td>2</td>
+<td>com.orangehrm.qa.testcases.LeaveEntitlementsPageTest@612fc6eb</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.ConfigurePIMPageTest.verifyEditShowAndCountryOptionTest()'><b>verifyEditShowAndCountryOptionTest</b><br>Test class: com.orangehrm.qa.testcases.ConfigurePIMPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.orangehrm.qa.testcases.ConfigurePIMPageTest@1060b431</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.AddUserPageTest.verifySetUp()'><b>verifySetUp</b><br>Test class: com.orangehrm.qa.testcases.AddUserPageTest</td>
+<td></td>
+<td>9</td>
+<td>com.orangehrm.qa.testcases.AddUserPageTest@87f383f</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.AdminPageTest.verifyAdminDeleteUser()'><b>verifyAdminDeleteUser</b><br>Test class: com.orangehrm.qa.testcases.AdminPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.orangehrm.qa.testcases.AdminPageTest@6121c9d6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.MyInfoContactDetailsPageTest.verifySaveContactDetailsTest()'><b>verifySaveContactDetailsTest</b><br>Test class: com.orangehrm.qa.testcases.MyInfoContactDetailsPageTest<br>Parameters: 4352 Ferry Street, 3662 Windy Ridge Road, Cary, California, d@dh.com, d@d.com</td>
+<td></td>
+<td>3</td>
+<td>com.orangehrm.qa.testcases.MyInfoContactDetailsPageTest@4d3167f4</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.MyInfoPageTest.setUp()'><b>setUp</b><br>Test class: com.orangehrm.qa.testcases.MyInfoPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.orangehrm.qa.testcases.MyInfoPageTest@3aeaafa6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.PIMReportsPageTest.verifySetUp()'><b>verifySetUp</b><br>Test class: com.orangehrm.qa.testcases.PIMReportsPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.orangehrm.qa.testcases.PIMReportsPageTest@612679d6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.MyInfoPageTest.verifyEditCustomField()'><b>verifyEditCustomField</b><br>Test class: com.orangehrm.qa.testcases.MyInfoPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.orangehrm.qa.testcases.MyInfoPageTest@3aeaafa6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.ConfigurePIMPageTest.verifyEditAllConfigurePIMPageTest()'><b>verifyEditAllConfigurePIMPageTest</b><br>Test class: com.orangehrm.qa.testcases.ConfigurePIMPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.orangehrm.qa.testcases.ConfigurePIMPageTest@1060b431</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.CsvDataImportaPageTest.verifyCsvDataUploadTest()'><b>verifyCsvDataUploadTest</b><br>Test class: com.orangehrm.qa.testcases.CsvDataImportaPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.orangehrm.qa.testcases.CsvDataImportaPageTest@e720b71</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.LeaveEntitlementsPageTest.verifySetUp()'><b>verifySetUp</b><br>Test class: com.orangehrm.qa.testcases.LeaveEntitlementsPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.orangehrm.qa.testcases.LeaveEntitlementsPageTest@612fc6eb</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.CustomFieldsPageTest.verifySetUp()'><b>verifySetUp</b><br>Test class: com.orangehrm.qa.testcases.CustomFieldsPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.orangehrm.qa.testcases.CustomFieldsPageTest@11758f2a</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.MyInfoContactDetailsPageTest.setUp()'><b>setUp</b><br>Test class: com.orangehrm.qa.testcases.MyInfoContactDetailsPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.orangehrm.qa.testcases.MyInfoContactDetailsPageTest@4d3167f4</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.CsvDataImportaPageTest.verifyCsvDataDownloadTest()'><b>verifyCsvDataDownloadTest</b><br>Test class: com.orangehrm.qa.testcases.CsvDataImportaPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.orangehrm.qa.testcases.CsvDataImportaPageTest@e720b71</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.EditUserPageTest.verifyEditUserPageTest()'><b>verifyEditUserPageTest</b><br>Test class: com.orangehrm.qa.testcases.EditUserPageTest<br>Parameters: Pandit, Orangehrm123_$, Orangehrm123_$</td>
+<td></td>
+<td>0</td>
+<td>com.orangehrm.qa.testcases.EditUserPageTest@4eb7f003</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.AdminPageTest.verifySetUp()'><b>verifySetUp</b><br>Test class: com.orangehrm.qa.testcases.AdminPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.orangehrm.qa.testcases.AdminPageTest@6121c9d6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.PIMReportsPageTest.verifyDelete()'><b>verifyDelete</b><br>Test class: com.orangehrm.qa.testcases.PIMReportsPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.orangehrm.qa.testcases.PIMReportsPageTest@612679d6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.PIMReportsPageTest.verifySortReportAndEditTest()'><b>verifySortReportAndEditTest</b><br>Test class: com.orangehrm.qa.testcases.PIMReportsPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.orangehrm.qa.testcases.PIMReportsPageTest@612679d6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.CustomFieldsPageTest.verifyCustomFieldPageNav()'><b>verifyCustomFieldPageNav</b><br>Test class: com.orangehrm.qa.testcases.CustomFieldsPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.orangehrm.qa.testcases.CustomFieldsPageTest@11758f2a</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.MyInfoPageTest.verifyEnterMyinfoTabTest()'><b>verifyEnterMyinfoTabTest</b><br>Test class: com.orangehrm.qa.testcases.MyInfoPageTest<br>Parameters: Patrick, Andrew, 112, 221, 123445</td>
+<td></td>
+<td>5</td>
+<td>com.orangehrm.qa.testcases.MyInfoPageTest@3aeaafa6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.CustomFieldsPageTest.verifyCustomFieldAddAndCancel()'><b>verifyCustomFieldAddAndCancel</b><br>Test class: com.orangehrm.qa.testcases.CustomFieldsPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.orangehrm.qa.testcases.CustomFieldsPageTest@11758f2a</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.LoginPageTest.verifyLoginPageTest()'><b>verifyLoginPageTest</b><br>Test class: com.orangehrm.qa.testcases.LoginPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.orangehrm.qa.testcases.LoginPageTest@50d0686</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.EditUserPageTest.verifySetUp()'><b>verifySetUp</b><br>Test class: com.orangehrm.qa.testcases.EditUserPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.orangehrm.qa.testcases.EditUserPageTest@4eb7f003</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.AssignLeavePageTest.verifyAssignpageTest()'><b>verifyAssignpageTest</b><br>Test class: com.orangehrm.qa.testcases.AssignLeavePageTest<br>Parameters: Orange Test, 2021-09-16, 2021-09-16, Leave</td>
+<td></td>
+<td>2</td>
+<td>com.orangehrm.qa.testcases.AssignLeavePageTest@eafc191</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.DashBoardPageTest.verifyLogOutAction()'><b>verifyLogOutAction</b><br>Test class: com.orangehrm.qa.testcases.DashBoardPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.orangehrm.qa.testcases.DashBoardPageTest@63440df3</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.DependentsPageTest.verifyEditDepAction()'><b>verifyEditDepAction</b><br>Test class: com.orangehrm.qa.testcases.DependentsPageTest<br>Parameters: Patrick2, 2021-09-18, Ram2</td>
+<td></td>
+<td>15</td>
+<td>com.orangehrm.qa.testcases.DependentsPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.ConfigurePIMPageTest.verifySetUp()'><b>verifySetUp</b><br>Test class: com.orangehrm.qa.testcases.ConfigurePIMPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.orangehrm.qa.testcases.ConfigurePIMPageTest@1060b431</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.MyInfoPageTest.addAttachment()'><b>addAttachment</b><br>Test class: com.orangehrm.qa.testcases.MyInfoPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.orangehrm.qa.testcases.MyInfoPageTest@3aeaafa6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.PIMReportsPageTest.verifyAddReportTest()'><b>verifyAddReportTest</b><br>Test class: com.orangehrm.qa.testcases.PIMReportsPageTest<br>Parameters: Report1</td>
+<td></td>
+<td>5</td>
+<td>com.orangehrm.qa.testcases.PIMReportsPageTest@612679d6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.MyInfoContactDetailsPageTest.verifyContactDetailsPageNav()'><b>verifyContactDetailsPageNav</b><br>Test class: com.orangehrm.qa.testcases.MyInfoContactDetailsPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.orangehrm.qa.testcases.MyInfoContactDetailsPageTest@4d3167f4</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.MyInfoContactDetailsPageTest.verifyContactAttachmentsTest()'><b>verifyContactAttachmentsTest</b><br>Test class: com.orangehrm.qa.testcases.MyInfoContactDetailsPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.orangehrm.qa.testcases.MyInfoContactDetailsPageTest@4d3167f4</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.CustomFieldsPageTest.verifyEditCustomFieldAndSave()'><b>verifyEditCustomFieldAndSave</b><br>Test class: com.orangehrm.qa.testcases.CustomFieldsPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.orangehrm.qa.testcases.CustomFieldsPageTest@11758f2a</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.DependentsPageTest.verifySetUp()'><b>verifySetUp</b><br>Test class: com.orangehrm.qa.testcases.DependentsPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.orangehrm.qa.testcases.DependentsPageTest@ed9d034</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.DashBoardPageTest.verifyDashbBoardElementsDisplayAndLogin()'><b>verifyDashbBoardElementsDisplayAndLogin</b><br>Test class: com.orangehrm.qa.testcases.DashBoardPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.orangehrm.qa.testcases.DashBoardPageTest@63440df3</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.DependentsPageTest.verifyEditDepAction()'><b>verifyEditDepAction</b><br>Test class: com.orangehrm.qa.testcases.DependentsPageTest<br>Parameters: Patrick, 2021-09-17, Pandit1</td>
+<td></td>
+<td>16</td>
+<td>com.orangehrm.qa.testcases.DependentsPageTest@ed9d034</td></tr>
+</table><p>
+</body>
+</html>
